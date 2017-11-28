@@ -15,8 +15,14 @@ public class Java_String {
             System.out.println("instanceVar="+instanceVar);
             System.out.println("classVar="+classVar);
     }
-    //public int getVar=
+    public int getinstanceVar(){
+        return  instanceVar;
+    }
 
+    public int setinstanceVar(int instanceVar){
+        this.instanceVar=instanceVar;
+        return  instanceVar;
+    }
 
     public static void main(String args[]) {
         Java_String c=new Java_String();
@@ -24,12 +30,9 @@ public class Java_String {
         c.func(1);
         c.func(1);
         d.func(1);
-        //System.out.println("c="+);
+        //instanceVar=10;   //error，不能直接操作实例变量
+        d.setinstanceVar(10);   //可以通过set方法操作实例变量
+        System.out.println("instanceVar="+d.getinstanceVar());  //可以通过get方法获取实例变量
     }
 
-
-
-
-
-   // System.out.println("v");
 }
