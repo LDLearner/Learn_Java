@@ -3,7 +3,7 @@
  * 用于学习java实例变量、局部变量和类变量
  * 运行结果展示了各种类型的变量的作用域和生存周期
  */
-public class Java_String {
+public class Var {
     static int classVar=1000;   //类变量（静态变量）全局使用，累计每次操作
     int instanceVar=100;    //实例变量(成员变量)，在实例内部使用，每个实例创建单独副本
     public void func(int a){
@@ -19,14 +19,13 @@ public class Java_String {
         return  instanceVar;
     }
 
-    public int setinstanceVar(int instanceVar){
-        this.instanceVar=instanceVar;
-        return  instanceVar;
+    public void setinstanceVar(int instanceVar){
+        this.instanceVar=instanceVar;   //this指向的是当前实例变量
     }
 
     public static void main(String args[]) {
-        Java_String c=new Java_String();
-        Java_String d=new Java_String();
+        Var c=new Var();
+        Var d=new Var();
         c.func(1);
         c.func(1);
         d.func(1);
