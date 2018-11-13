@@ -1,11 +1,8 @@
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by LD on 2017/12/2.
- * JAVA数组练习
+ * JAVA动态数组练习
  */
 public class ArrayListLearn {
     //class
