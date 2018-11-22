@@ -22,7 +22,7 @@ public class ArrayListLearn {
         if(ldlist.contains("PLMM")){        //查询ArrayList中的元素
             System.out.println("发现PLMM!");
         }
-        for (Object ListElement:ldlist)     //foreach的用法
+        for (Object ListElement:ldlist)     //foreach的用法，for(String str:arr)这里的str就是为了获取每次循环的arr中的值
         {
             System.out.print(ListElement);
         }

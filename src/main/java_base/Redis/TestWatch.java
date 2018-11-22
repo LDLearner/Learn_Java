@@ -17,7 +17,7 @@ public class TestWatch{
         //1:从jedis连接池中获取链接
         Jedis jedis = RedisTools.getJedis();
         //2:使用watch命令监控k1，可同时监控多个key
-        //jedis.watch("k1");
+        jedis.watch("k1");
 
         //3:获得k1的值并加1
         String value = jedis.get("k1");
@@ -28,6 +28,7 @@ public class TestWatch{
         Thread.sleep(10000);
 
         //5:事务操作,k1的value加1
+        //System.out.println("formatted="+jedis.get("k1"));
         Transaction multi = jedis.multi();
         multi.set("k1", num + "");
         List<Object> formatted = multi.exec();
