@@ -12,6 +12,7 @@ public class ThrowLearn {
         Math m = new Math() ;        // 实例化Math类对象
         try{//因之前用throws将异常由调用处处理，此处需添加try进行异常捕获
             System.out.println("除法操作：" + m.div(10,2)) ;
+            //System.out.println("除法操作：" + m.div(10,0)) ;
         }catch(Exception e){
             e.printStackTrace() ;    // 打印异常
         }

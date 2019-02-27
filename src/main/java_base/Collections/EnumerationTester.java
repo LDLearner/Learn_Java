@@ -1,4 +1,4 @@
-/**
+package Collections; /**
  * Created by LD on 2018/11/22.
  * 枚举类型
  */

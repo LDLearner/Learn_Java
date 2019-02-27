@@ -1,3 +1,6 @@
+package Collections;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,7 +16,7 @@ public class ArrayListLearn {
         a[1]="word!";
         System.out.println(a[0]+" "+a[1]);
         //定义动态数组ArrayList，长度不固定
-        List<String> ldlist=new java.util.ArrayList();
+        List<String> ldlist=new ArrayList<String>();
         ldlist.add("hi,");
         ldlist.add("GG");
         ldlist.add("Come Here!");

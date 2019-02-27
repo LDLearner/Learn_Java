@@ -1,4 +1,4 @@
-/**
+package Collections; /**
  * Created by LD on 2018/1/23.
  * JAVA数组常用操作
  */
