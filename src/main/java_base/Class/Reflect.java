@@ -11,7 +11,8 @@ class Reflect
 {
     public static void main (String[] args) throws java.lang.Exception
     {
-        A a=new A();
+        A log=new A();
+       // A a=new A();
         B b=new B();
         Object c=b.getClass();                  //通过getClass生成Class对象的引用
         String d=b.getClass().getName();        //通过getName获取Class对象名
