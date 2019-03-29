@@ -133,9 +133,7 @@ public class Assert_Num {
                     System.out.println("The Num is Error!!!"+"lastNum="+lastNum+","+"fansNum="+StrNum);
                     break;
             }
-
-
-            //errortimes++;
+            ReadFile.errortimes++;
         }
 
         return res;

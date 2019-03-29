@@ -35,7 +35,7 @@ public class Assert_Letter {
 
     public static boolean Assert_letter_today(int diff_hour, String letter) {
             ArrayList<String> list = new ArrayList();
-            if (diff_hour==-1000) {
+            if (diff_hour==-1000) {                                          //不同时间段对应的不同档位
                 ArrListAdd(list, "A", "B");
             } else if (diff_hour==-2000) {
                 ArrListAdd(list, "A", "B", "C");
@@ -52,7 +52,7 @@ public class Assert_Letter {
     public static boolean Assert_letter(int type, int diff_day, String letter, boolean AM) {
         ArrayList<String> list = new ArrayList();
         if (type == 1) {
-            if (diff_day <= 7) {                        //天判断
+            if (diff_day <= 7) {                        //天数判断，7天内逻辑
                 switch (diff_day) {
                     case 2:
                         if (AM == true) {
@@ -100,7 +100,7 @@ public class Assert_Letter {
 
                 }
             } else {
-                switch ((diff_day - 1) / 7 + 1) {                   //周判断，从第8天开始算第二周
+                switch ((diff_day - 1) / 7 + 1) {                   //周数判断，从第8天开始算第二周
                     case 2:                                         //第二周
                         if (AM == true) {
                             ArrListAdd(list, "A", "B");
@@ -143,7 +143,9 @@ public class Assert_Letter {
                             ArrListAdd(list, "A");
                         }
                         break;
-
+                    default:
+                        System.out.println("The Date is out of 7 week!!!");
+                        break;
                 }
             }
         } else {                                             //第二类
@@ -240,15 +242,14 @@ public class Assert_Letter {
                             ArrListAdd(list, "A");
                         }
                         break;
-
+                    default:
+                        System.out.println("The Date is out of 7 week!!!");
+                        break;
                 }
-
             }
-
         }
         System.out.print("letter="+letter+","+"AM="+AM+",");
         System.out.println("res="+list.contains(letter));
-
             return list.contains(letter);
         }
 

@@ -19,7 +19,7 @@ public class Redis {
             jedis.set("javaname", "jack");
             String name = jedis.get("javaname");
             System.out.println("javaname="+name);
-            jedis.del("javaname");
+            //jedis.del("javaname");
             //:关闭redis链接
 /*
         try {
