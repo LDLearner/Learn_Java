@@ -4,6 +4,7 @@ import java.io.*;
 
 /**
  * Created by LD on 2018/11/23.
+ * 字符流读取
  * BufferedReader和BufferedWriter的使用
  */
 public class BufferedReader {

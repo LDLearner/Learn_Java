@@ -8,6 +8,7 @@ import java.io.IOException;
 
 /**
  * Created by LD on 2018/11/23.
+ * 字节流读取文件
  * 通过FileInputStream和FileOutputStream复制图片
  */
 public class FileInputStream_Test {
