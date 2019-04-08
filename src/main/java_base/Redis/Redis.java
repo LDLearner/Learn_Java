@@ -23,7 +23,7 @@ public class Redis {
             //:关闭redis链接
 /*
         try {
-                Thread.sleep(5000);
+                MutilThread.sleep(5000);
             } catch (InterruptedException e) {
               e.printStackTrace();
             }

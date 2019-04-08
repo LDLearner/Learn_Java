@@ -80,7 +80,7 @@ public class ReadFile {
                         }
                     }
                     Assert_Num.Assert_Num(group,view,comment,collect,share,watch,lastNum);  //判断档位的取值区间逻辑
-                //Thread.sleep(1000);
+                //MutilThread.sleep(1000);
                 }
                 System.out.println("Total totaltimes is:"+totaltimes);
                 System.out.println("Error totaltimes is:"+errortimes);
