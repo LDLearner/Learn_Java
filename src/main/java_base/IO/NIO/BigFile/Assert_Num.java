@@ -1,10 +1,10 @@
-package Hibao_fakeData;
+package IO.NIO.BigFile;
 
 /**
  * Created by LD on 2019/3/21.
  */
 public class Assert_Num {
-    ReadFile rf=new ReadFile();
+    ReadFile_NIO rf=new ReadFile_NIO();
     public static void main(String[] args) {
 
     }

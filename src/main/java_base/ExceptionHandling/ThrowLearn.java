@@ -2,6 +2,7 @@ package ExceptionHandling;
 
 /**
  * Created by LD on 2018/9/4.
+ * 关于异常的捕获和处理
  */
 public class ThrowLearn {
     public static void main(String args[]) throws Exception {

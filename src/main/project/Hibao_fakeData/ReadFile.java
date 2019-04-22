@@ -11,7 +11,7 @@ public class ReadFile {
      * 获取日志文件中的时间
      * @throws FileNotFoundException
      */
-     int errortimes=0,totaltimes=0;
+    static int errortimes=0,totaltimes=0;
     public void addTotalTimes(){
         totaltimes++;
     }
