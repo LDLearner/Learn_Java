@@ -116,7 +116,6 @@ public class FileReader {
                 long endLineIndex = startIndex;//当前处理字节所在位置
                 while(channel.read(rbuf) != -1 && !isEnd){
                     int position = rbuf.position();
-                    System.out.println("position="+position+"-------------------------");
                     byte[] rbyte = new byte[position];
                     rbuf.flip();                                                //将buffer当前下标归零，便于下次读取
                     rbuf.get(rbyte);                                            // rbuf.get(rbyte)等同于rbuf.get(rbyte,0,rbyte.length()) 将rbuf缓冲区的数据读取存入rbyte数组
@@ -131,7 +130,7 @@ public class FileReader {
                                 startnum = i + 1;
                             }else{
                                 byte[] line = new byte[temp.length + i - startnum + 1];
-                                System.arraycopy(temp, 0, line, 0, temp.length);
+                                System.arraycopy(temp, 0, line, 0, temp.length);                                        //如果上次读取剩下部分有数据，先导入上次剩余数据
                                 System.arraycopy(rbyte, startnum, line, temp.length, i - startnum + 1);
 
                                 String lineStr=new String(line,"UTF-8").toString();
@@ -141,25 +140,18 @@ public class FileReader {
                                 //处理数据
 
                                 if(startIndex != 0){//如果不是第一个数据段
-
                                     if(lineCount == 1){
-                                        System.out.println("非第一个数据段");
                                         if(isWholeLine){//当且仅当第一行为完整行时才处理
-                                            System.out.println("第一行");
-                                            System.out.println(lineStr);
-                                            //RF.data(lineStr,diffday,redisctrl);
+//                                            System.out.println(lineStr);
+                                            RF.data(lineStr,diffday,redisctrl);
                                         }
                                     }else{
-                                        //System.out.println("line=1 and isWholeLine=1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``");
-                                        //dataProcessHandler.process(line);
-                                        System.out.println("非第一行");
-                                        System.out.println(lineStr);
-                                       // RF.data(lineStr,diffday,redisctrl);
+//                                         System.out.println(lineStr);
+                                       RF.data(lineStr,diffday,redisctrl);
                                     }
                                 }else{
-                                    System.out.println("第一个数据段");
-                                    System.out.println(lineStr);
-                                    //RF.data(lineStr,diffday,redisctrl);
+//                                    System.out.println(lineStr);
+                                    RF.data(lineStr,diffday,redisctrl);
 
                                 }
                                 //结束读取的判断
@@ -170,9 +162,9 @@ public class FileReader {
                             }
                         }
                     }
-                    if(!isEnd && startnum < rbyte.length){//说明rbyte最后还剩不完整的一行
+                    if(!isEnd && startnum < rbyte.length){//说明rbyte最后还剩不完整的一行，将剩余部分存入temp
                         byte[] temp2 = new byte[temp.length + rbyte.length - startnum];
-                        System.arraycopy(temp, 0, temp2, 0, temp.length);
+                        System.arraycopy(temp, 0, temp2, 0, temp.length);                                //该行作用未知
                         System.arraycopy(rbyte, startnum, temp2, temp.length, rbyte.length - startnum);
                         temp = temp2;
                     }
@@ -180,9 +172,9 @@ public class FileReader {
                 }
                 //兼容最后一行没有换行的情况
                 if(temp.length > 0){
-                        System.out.println(new String(temp,"UTF-8").toString());
-                        //RF.data(new String(temp,"UTF-8").toString(),diffday,redisctrl);
-                        System.out.println("最后一行");
+                        //System.out.println(new String(temp,"UTF-8").toString());
+                        RF.data(new String(temp,"UTF-8").toString(),diffday,redisctrl);
+                        //System.out.println("最后一行");
                 }
             } catch (IOException e) {
                 e.printStackTrace();
