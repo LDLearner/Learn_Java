@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="MyTestNG" verbose="5">
+<suite name="MyTestNG" verbose="1">
 
     <!--    <listeners>
             &lt;!&ndash;- base.ListenerExtentReports &ndash;&gt;
@@ -13,9 +13,9 @@
         <!--</packages>-->
         <classes>
             <class name="Net.OpenURL">
-                <methods>
-                    <include name="OpenURL"/>
-                </methods>
+                <!--<methods>-->
+                    <!--&lt;!&ndash;<include name="OpenURL"/>&ndash;&gt;-->
+                <!--</methods>-->
             </class>
         </classes>
     </test>
