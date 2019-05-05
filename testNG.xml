@@ -12,10 +12,10 @@
             <!--<package name = "main.java_base.Net"/>-->
         <!--</packages>-->
         <classes>
-            <class name="Net.OpenURL">
-                <methods>
-                    <include name="OpenURL"/>
-                </methods>
+            <class name="main.java_base.Net.OpenURL">
+                <!--<methods>-->
+                    <!--<include name="OpenURL"/>-->
+                <!--</methods>-->
             </class>
         </classes>
     </test>
