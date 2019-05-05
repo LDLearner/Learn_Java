@@ -23,7 +23,7 @@
                 <inherited>true</inherited>
                 <configuration>
                     <suiteXmlFiles>
-                    <suiteXmlFile>testNG.xml</suiteXmlFile>
+                    <!--<suiteXmlFile>testNG.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
