@@ -17,6 +17,6 @@ public class TempTest {
 
     @org.testng.annotations.Test
     public void testCase01() throws Exception {
-
+        System.out.println("Test");
     }
 }

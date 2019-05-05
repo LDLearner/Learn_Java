@@ -9,7 +9,11 @@ import java.net.URL;
  * Created by LD on 2019/4/25.
  */
 public class OpenURL {
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) {
+        OpenURL();
+    }
+    @org.testng.annotations.Test
+    public static void OpenURL(){
         try {
             URL url = new URL("http://10.0.5.226:8889/");
             InputStream in =url.openStream();
