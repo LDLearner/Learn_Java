@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.lidong</groupId>
+    <groupId>main.java_base</groupId>
     <artifactId>Learn</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
@@ -14,6 +14,7 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             <plugin>
@@ -23,7 +24,7 @@
                 <inherited>true</inherited>
                 <configuration>
                     <suiteXmlFiles>
-                    <!--<suiteXmlFile>testNG.xml</suiteXmlFile>-->
+                    <suiteXmlFile>testNG.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

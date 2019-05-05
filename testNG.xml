@@ -8,9 +8,9 @@
         </listeners>-->
 
     <test name="MyTest">
-        <packages>
-            <package name = "main.java_base.Net"/>
-        </packages>
+        <!--<packages>-->
+            <!--<package name = "main.java_base.Net"/>-->
+        <!--</packages>-->
         <classes>
             <class name="Net.OpenURL">
                 <methods>
