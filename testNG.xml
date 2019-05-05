@@ -8,16 +8,16 @@
         </listeners>-->
 
     <test name="MyTest">
-        <packages>
-            <package name = "main.java_base.Net"/>
-        </packages>
-        <!--<classes>-->
-            <!--<class name="Net.OpenURL">-->
-                <!--&lt;!&ndash;<methods>&ndash;&gt;-->
-                    <!--&lt;!&ndash;&lt;!&ndash;<include name="OpenURL"/>&ndash;&gt;&ndash;&gt;-->
-                <!--&lt;!&ndash;</methods>&ndash;&gt;-->
-            <!--</class>-->
-        <!--</classes>-->
+        <!--<packages>-->
+            <!--<package name = "main.java_base.Net"/>-->
+        <!--</packages>-->
+        <classes>
+            <class name="Net.OpenURL">
+                <methods>
+                    <include name="OpenURL"/>
+                </methods>
+            </class>
+        </classes>
     </test>
 
 </suite>
