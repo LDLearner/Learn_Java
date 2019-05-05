@@ -14,7 +14,7 @@
         <classes>
             <class name="Net.OpenURL">
                 <methods>
-                    <include name="OpenURL" />
+                    <include name="OpenURL"/>
                 </methods>
             </class>
         </classes>
