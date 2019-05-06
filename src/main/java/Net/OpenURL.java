@@ -15,7 +15,7 @@ public class OpenURL {
     @org.testng.annotations.Test
     public static void OpenURL(){
         try {
-            URL url = new URL("http://10.0.5.226:8889/");
+            URL url = new URL("http://www.baidu.com");
             InputStream in =url.openStream();
             InputStreamReader isr = new InputStreamReader(in);
             BufferedReader bufr = new BufferedReader(isr);
