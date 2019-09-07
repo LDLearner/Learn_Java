@@ -13,8 +13,10 @@ public class MyRunnable implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        for (i = 0; i < 100; i++) {
-            System.out.println(Thread.currentThread().getName() + " " + i);
-        }
+        //synchronized (this) {
+            for (i = 0; i < 100; i++) {
+                System.out.println(Thread.currentThread().getName() + " " + i);
+            }
+        //}
     }
 }

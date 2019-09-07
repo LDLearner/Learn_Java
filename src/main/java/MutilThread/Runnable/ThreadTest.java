@@ -16,10 +16,11 @@ public class ThreadTest {
                 Thread thread3 = new Thread(myRunnable);
                 Thread thread4 = new Thread(myRunnable);
                 thread1.start();  // 调用start()方法使得线程进入就绪状态
-                thread2.start();  //等待线程1执行完才开始执行，与main线程并行执行
                 thread1.join();  //调用join方法后，调用线程等待该线程完成后，才能继续用下运行，线程1和2并行
+                thread2.start();  //等待线程1执行完才开始执行，与main线程并行执行
+
                 thread3.start();
-                thread4.start();
+                //thread4.start();
             }
         }
         System.out.println("main线程运行结束！");

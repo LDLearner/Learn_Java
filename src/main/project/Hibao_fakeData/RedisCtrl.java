@@ -13,7 +13,7 @@ public class RedisCtrl {
         //System.out.println(getValue("3365"));
     }
    public Jedis con=conRedis();
-    final String host="10.0.5.226";
+    final String host="10.0.75.1";
     Jedis jedis=null;
     private Jedis conRedis() {
         if (jedis == null) {

@@ -22,7 +22,7 @@ public class ReadFile {
         {
             long startTime=System.currentTimeMillis();   //获取开始时间
             ReadFile rf=new ReadFile();
-            rf.ReadFile("999.txt");
+            rf.ReadFile("123.txt");
             long endTime=System.currentTimeMillis(); //获取结束时间
             System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
         }

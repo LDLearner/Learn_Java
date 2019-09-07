@@ -1,7 +1,7 @@
 package Math;
 /**
  * Created by LD on 2019/4/24.
- * 冒泡算法，时间复杂度n(n-1)/2
+ * 冒泡算法，时间复杂度(n-1) + (n-2) + (n-3) + … + 1 = n*(n-1)/2;
  */
 public class bub {
     public static void main(String[] args) {
