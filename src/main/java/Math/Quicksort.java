@@ -6,7 +6,7 @@ package Math;
 public class Quicksort {
     public static void main(String[] args) {
         shuffle arr=new shuffle();
-        int[] a=arr.ShuffleArray(3);
+        int[] a=arr.ShuffleArray(5);
         arr.readArray(a);
         quicksort(a,0,a.length-1);
         System.out.println("---------------------------------------------------------------------");

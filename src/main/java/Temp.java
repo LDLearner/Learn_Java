@@ -13,7 +13,6 @@ public class Temp{
         ActionListener listener = new TimePrinter();
         Timer t = new Timer(1000, listener);
         t.start();
-
         JOptionPane.showMessageDialog(null, "Quit?");
         System.exit(0);
     }

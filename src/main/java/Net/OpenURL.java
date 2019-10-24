@@ -10,12 +10,16 @@ import java.net.URL;
  */
 public class OpenURL {
     public static void main(String[] args) {
+//        System.setProperty("http.proxyHost", "127.0.0.1");
+//        System.setProperty("https.proxyHost", "127.0.0.1");
+//        System.setProperty("http.proxyPort", "8888");
+//        System.setProperty("https.proxyPort", "8888");
         OpenURL();
     }
     @org.testng.annotations.Test
     public static void OpenURL(){
         try {
-            URL url = new URL("http://www.baidu.com");
+            URL url = new URL("http://www.uusee.com");
             InputStream in =url.openStream();
             InputStreamReader isr = new InputStreamReader(in);
             BufferedReader bufr = new BufferedReader(isr);

@@ -6,12 +6,12 @@ package Math;
  */
 public class binarySearch {
     public static void main(String[] args) {
+
         binarySearch b=new binarySearch();
         int[] arr=b.createArr(10);
-        //b.bSearch();
         shuffle f=new shuffle();
         f.readArray(arr);
-        b.bSearch(arr,1);
+        b.bSearch(arr,6);
 
     }
     void bSearch(int[] arr,int num){
